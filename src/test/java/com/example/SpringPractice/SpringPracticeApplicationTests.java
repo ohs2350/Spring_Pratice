@@ -4,6 +4,7 @@ import com.example.SpringPractice.AOP.Americano;
 import com.example.SpringPractice.AOP.Coffee;
 import com.example.SpringPractice.AOP.ExcutionTImeCoffee;
 import com.example.SpringPractice.AOP.Latte;
+import com.example.SpringPractice.SOLID.LSP.CheckLSP;
 import com.example.SpringPractice.Spring_AOP.SpringCoffee;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,4 +37,10 @@ class SpringPracticeApplicationTests {
 		System.out.println(springLatte.make());
 	}
 
+	@Test
+	void test_LSP() {
+		CheckLSP checkLSP = new CheckLSP();
+		checkLSP.withoutLSP();
+		checkLSP.withLSP();
+	}
 }
