@@ -3,6 +3,9 @@ package com.example.SpringPractice.AOP;
 import org.springframework.util.StopWatch;
 
 public class ExcutionTImeCoffee implements Coffee{
+    /**
+     * 프록시 패턴과 동일
+     */
 
     private final Coffee coffeeType;
 
